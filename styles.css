@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Adjusted Logo Styling */
+.logo {
+    width: 250px; /* Increase the width */
+    height: auto;
+    margin-bottom: 20px; /* Optional: add some space below the logo */
+}
+
+
+h1 {
+    font-size: 1.8em;
+    color: #004080;
+    margin-top: 10px;
+}
+
+/* Main Content Styling */
+main {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+.problem-statement, .video-section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Video Section */
+.video-section video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+}

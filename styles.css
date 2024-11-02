@@ -96,3 +96,11 @@ hr {
     margin: 20px 0; /* Adjust space above and below */
 }
 
+.requirements ul {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0;       /* Aligns list items with the rest of the text */
+}
+
+.requirements li {
+    margin-bottom: 8px;    /* Adds space between each item */
+}

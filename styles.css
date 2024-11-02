@@ -97,7 +97,7 @@ hr {
 }
 
 .requirements ul {
-    list-style-type: none; /* Removes default bullets */
+    list-style-type: solid; /* Removes default bullets */
     padding-left: 0;       /* Aligns list items with the rest of the text */
 }
 

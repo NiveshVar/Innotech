@@ -111,7 +111,7 @@ hr {
 }
 
 .submit-button {
-    background-color: #004080;
+    background-color: #28a745; /* Green color */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -121,5 +121,6 @@ hr {
 }
 
 .submit-button:hover {
-    background-color: #002850;
+    background-color: #218838; /* Darker green for hover effect */
 }
+

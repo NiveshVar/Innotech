@@ -189,3 +189,85 @@ footer {
     color: #fff;
     width: 100%;
 }
+
+.snake-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #27d621; /* Dark background color */
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    transition: color 0.4s;
+    border-radius: 12px; /* Rounded edges */
+
+}
+
+/* Button text */
+.snake-button a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+/* Outer snake border */
+.snake-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid transparent;
+    border-top: 3px solid green;
+    border-right: 3px solid green;
+    border-bottom: 3px solid green;
+    border-left: 3px solid green;
+    box-sizing: border-box;
+    animation: snake-border 3s linear infinite;
+    border-radius: 12px; /* Rounded edges */
+
+}
+
+/* Snake border animation */
+@keyframes snake-border {
+    0% {
+        clip-path: inset(0 0 0 0);
+    }
+    25% {
+        clip-path: inset(0 0 0 50%);
+    }
+    50% {
+        clip-path: inset(0 50% 0 50%);
+    }
+    75% {
+        clip-path: inset(0 50% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Glow effect on hover */
+.snake-button:hover {
+    color: #ff0a0a; /* Text color change on hover */
+}
+
+.snake-button:hover::before {
+    border-color: #ff2600; /* Border color change on hover */
+    box-shadow: 0 0 10px #ff0000; /* Glow effect */
+}
+
+
+.button-container {
+    text-align: center; /* Center the button container */
+    margin-top: 20px;
+}
+
+.snake-button.center {
+    padding: 8px 20px; /* Narrower padding for a shorter button */
+    display: inline-block;
+}
+
